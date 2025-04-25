@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Sunday Coffee';
+    src: url('fonts/sunday-coffee.woff2') format('woff2'),
+        url('fonts/sunday-coffee.woff') format('woff'),
+        url('fonts/sunday-coffee.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Sunday Coffee', cursive;
+    margin: 0;
+}
+
+html,
+body {
+    background: beige;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro {
+    background-color: black;
+    height: 75vh;
+    width: 37.5vw;
+    border-radius: 10px;
+    text-align: center;
+    color: beige;
+}
