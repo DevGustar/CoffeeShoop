@@ -1,23 +1,237 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shoop</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop | Gustavo Roberto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="content">
-        <div class="container">
-            <h1>Coffee Shoop</h1>
-            <p>Aquele cafézinho sem igual para um momento especial.<br><br> dia perfeito merece um café perfeito.</p>
-            <a href="pages/cadastro.html"><button>#QueroCoffee</button></a>
-        </div>
-        <img src="xicaradecafe.png" alt="Xicara de Café">
-    </div>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">☕ Coffee Shop</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Cardápio</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Galeria</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">O Melhor Café</h2>
+                    <h3 class="subtitle">Torne seu dia especial com o nosso café especial!</h3>
+                    <p class="description">Bem-vindo ao nosso paraíso do café, onde cada grão conta uma história e cada
+                        xícara desperta alegria.</p>
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Peça Agora</a>
+                        <a href="#contact" class="button contact-us">Fale Conosco</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/coffee-hero-section.png" alt="Café" class="hero-image" />
+                </div>
+            </div>
+        </section>
 
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="images/about-image.jpg" alt="Sobre" class="about-image" />
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">Sobre Nós</h2>
+                    <p class="text">No Coffee House em Berndorf, Alemanha, temos orgulho de ser o destino preferido para
+                        amantes de café e apreciadores de boas conversas. Somos dedicados a oferecer uma experiência de
+                        café excepcional em um ambiente acolhedor e convidativo, onde os clientes podem relaxar,
+                        descontrair e aproveitar o momento com conforto.</p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Nosso Cardápio</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/hot-beverages.png" alt="Bebidas Quentes" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Bebidas Quentes</h3>
+                            <p class="text">Grande variedade de cafés quentes e fumegantes para renovar suas energias.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/cold-beverages.png" alt="Bebidas Geladas" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Bebidas Geladas</h3>
+                            <p class="text">Café gelado cremoso e espumoso para te refrescar.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/refreshment.png" alt="Refrescantes" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Refrescantes</h3>
+                            <p class="text">Bebidas de frutas geladas para te revigorar.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/special-combo.png" alt="Combos Especiais" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Combos Especiais</h3>
+                            <p class="text">Suas combinações favoritas de comida e bebida.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/desserts.png" alt="Sobremesa" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Sobremesa</h3>
+                            <p class="text">Satisfaça seu paladar e embarque em uma experiência culinária.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/burger-frenchfries.png" alt="Hambúrguer e Batatas Fritas" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Hambúrguer e Batatas Fritas</h3>
+                            <p class="text">Lanches rápidos para matar a sua fome.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Depoimentos</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-1.jpg" alt="Usuário" class="user-image" />
+                                <h3 class="name">Sarah Johnson</h3>
+                                <i class="feedback">"Adorei o French Roast. Perfeitamente equilibrado e encorpado. Vou
+                                    pedir novamente!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-2.jpg" alt="Usuário" class="user-image" />
+                                <h3 class="name">James Wilson</h3>
+                                <i class="feedback">"Ótima mistura de espresso! Sabor suave e marcante. Entrega rápida
+                                    também!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-3.jpg" alt="Usuário" class="user-image" />
+                                <h3 class="name">Michael Brown</h3>
+                                <i class="feedback">"Sabor de mocha fantástico. Fresco e aromático. Entrega rápida!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-4.jpg" alt="Usuário" class="user-image" />
+                                <h3 class="name">Emily Harris</h3>
+                                <i class="feedback">"Excelente qualidade! Grãos frescos e entrega rápida. Altamente
+                                    recomendado."</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-5.jpg" alt="Usuário" class="user-image" />
+                                <h3 class="name">Anthony Thompson</h3>
+                                <i class="feedback">"Melhor descafeinado que já experimentei! Suave e saboroso. Chegou
+                                    rapidamente."</i>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Galeria</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item"><img src="images/gallery-1.jpg" alt="Imagem da Galeria"
+                            class="gallery-image" /></li>
+                    <li class="gallery-item"><img src="images/gallery-2.jpg" alt="Imagem da Galeria"
+                            class="gallery-image" /></li>
+                    <li class="gallery-item"><img src="images/gallery-3.jpg" alt="Imagem da Galeria"
+                            class="gallery-image" /></li>
+                    <li class="gallery-item"><img src="images/gallery-4.jpg" alt="Imagem da Galeria"
+                            class="gallery-image" /></li>
+                    <li class="gallery-item"><img src="images/gallery-5.jpg" alt="Imagem da Galeria"
+                            class="gallery-image" /></li>
+                    <li class="gallery-item"><img src="images/gallery-6.jpg" alt="Imagem da Galeria"
+                            class="gallery-image" /></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Fale Conosco</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info"><i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Av. da Liberdade, 532 - Liberdade, São Paulo - SP, 01502-001</p>
+                    </li>
+                    <li class="contact-info"><i class="fa-regular fa-envelope"></i>
+                        <p>guroberto.dev@gmail.com</p>
+                    </li>
+                    <li class="contact-info"><i class="fa-solid fa-phone"></i>
+                        <p>(11)93089-6045</p>
+                    </li>
+                    <li class="contact-info"><i class="fa-regular fa-clock"></i>
+                        <p>Segunda a Sexta: 9h00 - 17h00</p>
+                    </li>
+                    <li class="contact-info"><i class="fa-regular fa-clock"></i>
+                        <p>Sábado: 10h00 - 15h00</p>
+                    </li>
+                    <li class="contact-info"><i class="fa-regular fa-clock"></i>
+                        <p>Domingo: Fechado</p>
+                    </li>
+                </ul>
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Seu nome" class="form-input" required />
+                    <input type="email" placeholder="Seu e-mail" class="form-input" required />
+                    <textarea placeholder="Sua mensagem" class="form-input" required></textarea>
+                    <button type="submit" class="button submit-button">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2025 Coffee Shop</p>
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Política de Privacidade</a>
+                    <span class="separator">•</span>
+                    <a href="#" class="policy-link">Política de Reembolso</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
